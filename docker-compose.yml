@@ -1,0 +1,13 @@
+version: "3.8"
+services:
+  qiskit-jupyter:
+    build: .
+    image: qiskit-jupyter
+    volumes:
+      - ${PWD}/:/home/jovyan/work
+    ports:
+      - 8888:8888
+    container_name: qiskit-jupyter
+    command: jupyter notebook --ip='*' --NotebookApp.token='' --NotebookApp.password=''
+    environment:
+      - JUPYTER_ENABLE_LAB=yes
