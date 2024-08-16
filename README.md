@@ -1,5 +1,20 @@
 # qiskit-jupyter
 
+# 実行方法
+
+```
+docker compose up 
+```
+
+# 使い方
+localhost:8888 にアクセスすると、qiskitが使えるjupyter notebookが開きます。  
+ipを制限しないので、プライベートネットワーク内ならアクセス可能です。
+手元で修正する場合はdocker-compose.ymlを編集し、手元でbuildするよう設定してください。
+
+
+
+
+
 デバッグ用便利スクリプト、solveを問題に合わせて適宜いじって使う
 
 ```python
