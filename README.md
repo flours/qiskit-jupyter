@@ -101,7 +101,7 @@ L=1
 showstate(n,solve(n,L))
 
 # 測定
-measure(solve(n,L),L)
+measure(solve(n,L),n)
 
 # 測定後はベクトル壊れているので注意
 showstate(n,solve(n,L))
